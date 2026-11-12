@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Test Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 9px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            display: none;
+            margin-top: 25px;
+            padding: 15px;
+            background: #f2f2f2;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>IP Test Demo</h1>
+
+    <p>
+        Diese Demo zeigt, wie eine transparente
+        Zustimmung aussehen kann.
+        Es werden keine IP-Adressen gesammelt
+        oder weitergegeben.
+    </p>
+
+    <button onclick="showResult()">
+        Ich stimme zu
+    </button>
+
+    <div id="result">
+        <h3>Demo aktiviert!</h3>
+        <p>Die IP-Erfassung ist in dieser Demo deaktiviert.</p>
+    </div>
+</div>
+
+<script>
+    function showResult() {
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
